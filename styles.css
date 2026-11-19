@@ -1,0 +1,253 @@
+@import url('https://googleapis.com');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Kalnia', serif;
+    background-color: #f5eee6;
+    color: #3e2723;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4b2e1e;
+    padding: 15px 8%;
+}
+
+nav h2 {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d6a46a;
+}
+
+main, .hero {
+    flex: 1 0 auto;
+    width: 100%;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 35px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 25px;
+    background-color: #4b2e1e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #754b32;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 35px auto 0;
+}
+
+.coffee {
+    background-color: white;
+    padding: 35px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.coffee:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+}
+
+.coffee h2 {
+    color: #6f4025;
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.coffee p {
+    color: #777;
+    line-height: 1.8;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.coffee span {
+    color: #a0522d;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contact h1 {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.contact > p {
+    font-size: 17px;
+}
+
+.contact-card {
+    background-color: white;
+    max-width: 530px;
+    margin: 35px auto;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card h3 {
+    color: #6f4025;
+    font-size: 21px;
+    font-weight: 500;
+    margin: 15px 0 8px;
+}
+
+.contact-card p {
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #4b2e1e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: auto;
+    flex-shrink: 0;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+@media (max-width: 900px) {
+    .menu {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    main, .hero {
+        padding: 40px 15px;
+    }
+
+    main h1, .contact h1 {
+        font-size: 28px;
+    }
+
+    .menu {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+    }
+
+    .coffee {
+        min-height: 180px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .contact-card {
+        padding: 25px 20px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+}
