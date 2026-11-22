@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expresso Coffee Shop</title>
     <link rel="stylesheet" href="styles.css">
-
-
 </head>
 <body>
 
@@ -17,6 +14,7 @@
         <ul>
             <li><a href="index.php">Home</a></li>
             <li><a href="menu.php">Menu</a></li>
+            <li><a href="functions.php">Stock</a></li>
             <li><a href="contact.php">Contact</a></li>
         </ul>
     </nav>

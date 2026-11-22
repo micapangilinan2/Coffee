@@ -68,7 +68,7 @@ main h1 {
     margin-bottom: 35px;
 }
 
-.hero {
+.section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,18 +76,18 @@ main h1 {
     padding: 40px 20px;
 }
 
-.hero h1 {
+.section h1 {
     font-size: 48px;
     font-weight: 500;
     margin-bottom: 20px;
 }
 
-.hero p {
+.section p {
     font-size: 18px;
     margin-bottom: 12px;
 }
 
-.btn {
+.view {
     display: inline-block;
     margin-top: 25px;
     padding: 13px 25px;
@@ -98,7 +98,7 @@ main h1 {
     transition: background-color 0.3s;
 }
 
-.btn:hover {
+.view:hover {
     background-color: #754b32;
 }
 
@@ -147,6 +147,44 @@ main h1 {
     color: #a0522d;
     font-size: 20px;
     font-weight: 500;
+}
+
+.stock-table {
+    width: 100%;
+    max-width: 900px;
+    margin: 35px auto 0;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stock-table th, 
+.stock-table td {
+    padding: 16px 20px;
+    text-align: center;
+    border-bottom: 1px solid #f0e6dc;
+}
+
+.stock-table th {
+    background-color: #4b2e1e;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.stock-table td {
+    color: #3e2723;
+    font-size: 16px;
+}
+
+.stock-table tbody tr:hover {
+    background-color: #faf5f0;
+}
+
+.stock-table tbody tr:last-child td {
+    border-bottom: none;
 }
 
 .contact h1 {
@@ -235,11 +273,17 @@ footer p {
         min-height: 180px;
     }
 
-    .hero h1 {
+    .stock-table th, 
+    .stock-table td {
+        padding: 12px 8px;
+        font-size: 13px;
+    }
+
+    .section h1 {
         font-size: 30px;
     }
 
-    .hero p {
+    .section p {
         font-size: 15px;
     }
 
